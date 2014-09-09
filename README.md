@@ -1,4 +1,4 @@
-project-starter
-===============
+Project Starter Files
+=====================
 
 Starter files for a static project
