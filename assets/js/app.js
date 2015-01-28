@@ -1,4 +1,4 @@
-(function (w, doc) {
+(function ($, w, doc) {
 
   // Enable strict mode
   "use strict";
@@ -17,4 +17,4 @@
   // Start the application
   App.init();
 
-} )( this, this.document );
+} )( jQuery, this, this.document );
