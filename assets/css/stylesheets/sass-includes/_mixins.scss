@@ -1,16 +1,16 @@
 // Move element off screen
 
 @mixin move-off-screen () {
-    position: absolute;
-    top: -9999px;
-    left: -9999px;
+  position: absolute;
+  top: -999em;
+  left: -999em;
 }
 
 // Move text off screen 
 
 @mixin replace-text () {
-    text-indent: -9999px;
-    overflow: hidden;
+  text-indent: -9999px;
+  overflow: hidden;
 }
 
 // Fix inline-block cross browser
