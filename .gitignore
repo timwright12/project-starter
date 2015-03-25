@@ -1,4 +1,5 @@
 # Sass
+.sass-cache/
 .sass-cache/*
 
 # Jekyll
