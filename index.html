@@ -35,6 +35,9 @@
   <!-- style -->
   <link rel="stylesheet" href="assets/css/app.css">
   
+  <!-- head script (20 KB) -->
+  <script src="assets/js/vendor/modernizr.custom.min.js"></script>
+  
   <!--[if lt IE 9 ]>
     <script src="assets/js/vendor/respond.min.js"></script>
   <![endif]-->
@@ -42,8 +45,10 @@
   <!-- If loading google (or any) fonts, code courtesy of @jpamental: https://github.com/jpamental/ -->
   <script>
     
+    // Open Sans, 4 styles: 874 KB (remove custom object if there are no local fonts to load)
+    
     WebFontConfig = {
-      google: { families: [ 'Playfair Display:400italic|Merriweather:400,900italic,700italic,900,700:all' ] },
+      google: { families: [ 'Open+Sans:400italic,700italic,400,700:latin' ] },
       custom: { families: ['Name of local font'], urls: ['assets/css/app.css'] }
     };
     
@@ -60,14 +65,14 @@
   </script>
   
   <noscript>
-    <!-- noscript for when JavaScript is unavailable -->
-    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400italic|Merriweather:400,900italic,700italic,900,700&subset=all" rel="stylesheet">
+    <!-- When JavaScript is unavailable -->
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700" rel="stylesheet">
   </noscript>
 
 </head>
 <body>
   
-  <!-- script -->
+  <!-- foot script (jQuery: 96 KB)-->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
   <script src="assets/js/app.js"></script>
 
