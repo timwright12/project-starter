@@ -6,7 +6,8 @@
   <link rel="dns-prefetch" href="//ajax.googleapis.com">
   <link rel="dns-prefetch" href="//fonts.googleapis.com">
   
-  <meta charset="UTF-8">
+  <!-- meta cluster -->
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="cleartype" content="on">
   
@@ -34,10 +35,40 @@
   <!-- style -->
   <link rel="stylesheet" href="assets/css/app.css">
   
+  <!--[if lt IE 9 ]>
+    <script src="assets/js/vendor/respond.min.js"></script>
+  <![endif]-->
+  
+  <!-- If loading google (or any) fonts, code courtesy of @jpamental: https://github.com/jpamental/ -->
+  <script>
+    
+    WebFontConfig = {
+      google: { families: [ 'Playfair Display:400italic|Merriweather:400,900italic,700italic,900,700:all' ] },
+      custom: { families: ['Name of local font'], urls: ['assets/css/app.css'] }
+    };
+    
+    (function() {
+      var wf = document.createElement('script');
+      wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+      '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+      wf.type = 'text/javascript';
+      wf.async = 'true';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(wf, s);
+    })();
+    
+  </script>
+  
+  <noscript>
+    <!-- noscript for when JavaScript is unavailable -->
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400italic|Merriweather:400,900italic,700italic,900,700&subset=all" rel="stylesheet">
+  </noscript>
+
 </head>
 <body>
   
   <!-- script -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
   <script src="assets/js/app.js"></script>
 
 </body>
