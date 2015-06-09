@@ -2,6 +2,9 @@
 .sass-cache/
 .sass-cache/*
 
+# NPM
+node_modules/
+
 # Jekyll
 _site/
 
