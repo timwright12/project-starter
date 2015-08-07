@@ -1,4 +1,4 @@
-(function ($, w, doc) {
+;(function ($, w, doc) {
 
   // Enable strict mode
   "use strict";
