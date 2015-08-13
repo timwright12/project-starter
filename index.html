@@ -33,7 +33,11 @@
   <![endif]-->
  
   <script>
-
+    // remove no-js and add js to the HTML (do it the cross-brower way)
+    document.documentElement.className = document.documentElement.className.replace('no-js', " ");
+    document.documentElement.className += ' js ';
+    
+    
     // Open Sans, 4 styles: 110 KB (remove custom object if there are no local fonts to load)
     // webfont.js, 18 KB
     
