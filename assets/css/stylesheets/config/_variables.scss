@@ -14,3 +14,13 @@ $breakpoint-large: 900px;
 $breakpoint-mid: 800px;
 $breakpoint-small: 600px;
 $breakpoint-tiny: 400px;
+
+// namespace
+$ns : '' !default;
+
+/*
+ USAGE
+ $ns: 'derp-';
+ #{$ns}btn {  } // .derp-btn {  }
+
+*/
