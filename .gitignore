@@ -1,6 +1,8 @@
 # Sass
+.sass-cache
 .sass-cache/
 .sass-cache/*
+*.map
 
 # NPM
 node_modules/
