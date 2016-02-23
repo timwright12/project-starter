@@ -50,6 +50,14 @@
   }
 }
 
+// breakpoints helper
+
+@mixin breakpoint( $point ) {
+  @media ( min-width: $point ) {
+    @content;
+  }
+}
+
 // font size to REM
 
 @mixin font-size ($size: 14, $parentSize: 16) {
@@ -59,6 +67,7 @@
 
 // Vendor prefix'd helpers
 
+// border-radius -- remove for autoprefixer
 @mixin border-radius ( $values ) {
   -webkit-border-radius: $values;
      -moz-border-radius: $values;
@@ -68,24 +77,21 @@
           background-clip: padding-box;
 }
 
+// box-shadow -- remove for autoprefixer
 @mixin box-shadow ( $values ) {
   -webkit-box-shadow: $values;
      -moz-box-shadow: $values;
           box-shadow: $values;
 }
 
+// box-sizing -- remove for autoprefixer
 @mixin box-sizing ( $values ) {
   -webkit-box-sizing: $values;
      -moz-box-sizing: $values;
           box-sizing: $values;
 }
 
-@mixin text-rendering ( $string ) {
-  -webkit-text-rendering: $string;
-     -moz-text-rendering: $string;
-          text-rendering: $string;
-}
-
+// transforms -- remove for autoprefixer
 @mixin transform ( $values ) {
   -webkit-transform: $values;
      -moz-transform: $values;
@@ -93,6 +99,7 @@
           transform: $values;
 }
 
+// transitions -- remove for autoprefixer
 @mixin transition ( $values ) {
   -webkit-transition: $values;
      -moz-transition: $values;
@@ -100,6 +107,7 @@
           transition: $values;
 }
 
+// linear gradient
 @mixin gradient-linear ( $start, $end ) {
   background: $start;
   background: -moz-linear-gradient(top,  $start 0%, $end 100%);
