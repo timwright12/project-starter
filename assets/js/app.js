@@ -13,7 +13,7 @@
     Utility Ajax Call
   */
   
-  App.Util.Get = function ( options, callback ) {
+  App.Util.get = function ( options, callback ) {
     
     var defaults = {
         'url' : null,
