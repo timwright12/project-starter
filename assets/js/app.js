@@ -13,7 +13,7 @@
     Utility Ajax Call
   */
   
-  App.Util.get = function ( options, callback ) {
+  App.get = function ( options, callback ) {
     
     var defaults = {
         'url' : null,
@@ -65,7 +65,7 @@
     Check if an element is hidden (display: none OR visibility: hidden)
   */
   
-  App.Util.isHidden = function ( el ) {
+  App.isHidden = function ( el ) {
     return (el.offsetParent === null);
   };
   
@@ -73,7 +73,7 @@
     Cross-browser way to tell if an element has a certain class
   */
   
-  App.Util.hasClass = function ( el, cls ) {
+  App.hasClass = function ( el, cls ) {
     if (el.classList) {
       return el.classList.contains(cls);
     } else {
@@ -85,10 +85,10 @@
     Cross-browser way to add a class
   */
   
-  App.Util.addClass = function ( el, cls ) {
+  App.addClass = function ( el, cls ) {
     if (el.classList) {
       el.classList.add(cls);
-    } else if (!App.Util.hasClass(el, cls)) {
+    } else if (!App.hasClass(el, cls)) {
       el.cls += " " + cls;
     }
   };
@@ -97,10 +97,10 @@
     Cross-browser way to remove a class
   */
   
-  App.Util.removeClass = function ( el, cls ) {
+  App.removeClass = function ( el, cls ) {
     if (el.classList) {
       el.classList.remove(cls);
-    } else if (App.Util.hasClass(el, cls)) {
+    } else if (App.hasClass(el, cls)) {
       var reg = new RegExp('(\\s|^)' + cls + '(\\s|$)');
       el.cls=el.cls.replace(reg, ' ');
     }
