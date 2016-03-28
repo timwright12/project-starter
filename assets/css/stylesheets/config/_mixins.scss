@@ -37,15 +37,9 @@
 // New hotness clearfix
 
 @mixin clearfix () {
-  *zoom: 1;
-  clear: both;
-  
-  &:before, &:after {
-    content: " ";
-    display: table;
-  }
-  
   &:after {
+    content:" ";
+    display: block;
     clear: both;
   }
 }
