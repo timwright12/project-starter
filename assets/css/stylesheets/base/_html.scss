@@ -1,3 +1,9 @@
+/* Helps to create a higher contrast for accessibility  */
+::selection {
+  color: #fff;
+  background-color: #000;
+}
+
 body {
   font-size: 100%;
 }
