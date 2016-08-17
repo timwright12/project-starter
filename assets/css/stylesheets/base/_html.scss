@@ -6,6 +6,7 @@
 
 body {
   font-size: 100%;
+  // font-size: calc(1em + 1vw); <- nicer, but poor support
 }
 
 h1 {
