@@ -6,6 +6,22 @@
   // Enable strict mode
   "use strict";
 
+	// Polyfill for el.matches
+	if (!Element.prototype.matches) {
+		Element.prototype.matches =
+		Element.prototype.matchesSelector ||
+		Element.prototype.mozMatchesSelector ||
+		Element.prototype.msMatchesSelector ||
+		Element.prototype.oMatchesSelector ||
+		Element.prototype.webkitMatchesSelector ||
+		function(s) {
+			var matches = (this.document || this.ownerDocument).querySelectorAll(s),
+			i = matches.length;
+			while (--i >= 0 && matches.item(i) !== this) {}
+			return i > -1;
+		};
+	}
+
   // Local object for method references
   var App = {};
 
@@ -106,11 +122,7 @@
   */
   
   App.hasClass = function ( el, cls ) {
-    if (el.classList) {
-      return el.classList.contains(cls);
-    } else {
-      return !!el.cls.match(new RegExp('(\\s|^)' + cls + '(\\s|$)'));
-    }
+    return el.className && new RegExp("(\\s|^)" + cls + "(\\s|$)").test( el.className );
   };
   
   /* 
