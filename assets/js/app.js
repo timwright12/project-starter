@@ -130,11 +130,11 @@
   */
   
   App.addClass = function ( el, cls ) {
-    if (el.classList) {
-      el.classList.add(cls);
-    } else if (!App.hasClass(el, cls)) {
-      el.cls += " " + cls;
-    }
+    if ( el.classList ) {
+	    el.classList.add( cls );
+	  } else if (!App.hasClass( el, cls )) {
+		  el.className += " " + cls;
+	  }
   };
   
   /* 
