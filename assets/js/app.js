@@ -146,7 +146,7 @@
       el.classList.remove(cls);
     } else if (App.hasClass(el, cls)) {
       var reg = new RegExp('(\\s|^)' + cls + '(\\s|$)');
-      el.cls=el.cls.replace(reg, ' ');
+      el.className = el.className.replace( reg, ' ' );
     }
   };
   
