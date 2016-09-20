@@ -5,7 +5,7 @@ module.exports = {
       style: 'expanded'
     },
     files: {
-      'assets/css/app.css': 'assets/css/stylesheets/*'
+      'assets/css/app.css': 'assets/css/stylesheets/manifest.scss'
     }
   }
 }
