@@ -1,6 +1,6 @@
 {
-  "name": "marker",
-  "version": "0.1.0",
+  "name": "Project-Starter",
+  "version": "0.2.0",
   "devDependencies": {
     "grunt": "~1.0.0",
     "glob": "~4.3.1",
