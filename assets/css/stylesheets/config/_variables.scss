@@ -2,18 +2,17 @@
 
 $font-primary: Sans-serif;
 
-//colors
+// colors
 $color-base: #fff;
 $color-primary: #000;
 
 $color-action: blue;
 
 // breakpoints
-$breakpoint-wide: 1000px;
-$breakpoint-large: 900px;
-$breakpoint-mid: 800px;
-$breakpoint-small: 600px;
-$breakpoint-tiny: 400px;
+$bp-tiny: 25em !default; // 400px
+$bp-small: 40.625em !default; // 650px
+$bp-medium: 53.125em !default; // 850px
+$bp-large: 62.5em !default; // 1000px
 
 // namespace
 $ns : '' !default;

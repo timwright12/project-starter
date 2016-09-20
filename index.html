@@ -2,44 +2,44 @@
 <html lang="en-US" class="no-js">
 <head>
   <title></title>
-  
+
   <link rel="dns-prefetch" href="//ajax.googleapis.com">
   <link rel="dns-prefetch" href="//fonts.googleapis.com">
-  
+
   <!-- meta cluster -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="cleartype" content="on">
-  
+
   <!-- icons & favicons -->
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="msapplication-TileImage" content="images/icons/mstile-144x144.png">
-  
+
   <!-- Touch Icons (180×180px)-->
   <link rel="apple-touch-icon" href="path/to/apple-touch-icon.png">
   <link rel="apple-touch-icon-precomposed" href="path/to/apple-touch-icon-precomposed.png">
-  
+
   <link rel="icon" type="image/png" href="images/icons/favicon-16x16.png" sizes="16x16">
   <link rel="icon" type="image/png" href="images/icons/favicon-32x32.png" sizes="32x32">
   <link rel="icon" type="image/png" href="images/icons/favicon-96x96.png" sizes="96x96">
-  
+
   <!--[if IE]>
   <link rel="shortcut icon" href="images/icons/favicon.ico">
   <![endif]-->
- 
+
   <script>
     // remove no-js and add js to the HTML (do it the cross-brower way)
     document.documentElement.className = document.documentElement.className.replace('no-js', " ");
     document.documentElement.className += ' js ';
-    
+
     // Open Sans, 4 styles: 110 KB (remove custom object if there are no local fonts to load)
     // webfont.js, 18 KB
-    
+
     WebFontConfig = {
       google: { families: [ 'Open+Sans:400italic,700italic,400,700:latin' ] },
       custom: { families: ['Name of local font'], urls: ['assets/css/fonts.css'] }
     };
-    
+
     (function() {
       var wf = document.createElement('script');
       wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
@@ -59,25 +59,26 @@
 
   <!--Element Queries (remove if you're not using them - the polyfill, as well) -->
   <script src="//cdnjs.cloudflare.com/ajax/libs/eqcss/1.2.1/EQCSS.min.js"></script>
-  
+
   <!--[if lte IE 9 ]>
     <script src="//cdnjs.cloudflare.com/ajax/libs/classlist/2014.01.31/classList.min.js"></script>
+    <script src="assets/js/vendor/polyfill.matches.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
   <![endif]-->
-  
+
   <!--[if lt IE 9 ]>
     <script src="assets/js/vendor/polyfill.addeventlistener.js"></script>
     <script src="assets/js/vendor/polyfill.indexof.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.1.0/respond.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/eqcss/1.2.1/EQCSS-polyfills.min.js"></script>
   <![endif]-->
-  
+
   <!-- style -->
   <link rel="stylesheet" href="assets/css/app.min.css">
-  
+
 </head>
 <body>
-  
+
   <!-- foot script (jQuery: 96 KB)-->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
   <script src="assets/js/app.min.js"></script>
