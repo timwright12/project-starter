@@ -1,3 +1,7 @@
+# Project Files
+assets/css/app.min.css
+assets/js/app.min.js
+
 # Sass
 .sass-cache
 .sass-cache/
