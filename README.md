@@ -13,7 +13,7 @@ These are the files I use when I'm starting a new project.
 
 ## Usage
 
-This is the basic structure of the files inside Corkscrew:
+This is the basic structure of the files inside the repository:
 
 ```
 assets/
