@@ -1,4 +1,4 @@
-;(function ($, w, doc) {
+;(function ( $, w, doc ) {
 
   // Uncomment this if you're using jQuery
   // if(! 'jQuery' in w){ return; }
