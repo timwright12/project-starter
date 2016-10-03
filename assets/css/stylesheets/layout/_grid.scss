@@ -1,24 +1,26 @@
 /* 
 
   Flexbox Grid:
-
+  
   <div class="flex-grid-contain">
     <div class="flex-grid">
       <div>A column</div> 
       <div>A column</div> 
     </div><!--/.flex-grid-->
   </div><!--/.flex-grid-contain-->
+  
+  Modified from: https://github.com/Heydon/fukol-grids
 
 */
-
-.grid-contain {
-  overflow: hidden;
-}
 
 .grid {
   display: flex;
   flex-flow: row wrap;
   margin: -0.5em;
+  
+  &-contain {
+    overflow: hidden;
+  }
   
   > * {
     flex-basis: 10em;
