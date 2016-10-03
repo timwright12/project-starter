@@ -2,12 +2,12 @@
 
   Flexbox Grid:
   
-  <div class="flex-grid-contain">
-    <div class="flex-grid">
+  <div class="grid-contain">
+    <div class="grid">
       <div>A column</div> 
       <div>A column</div> 
-    </div><!--/.flex-grid-->
-  </div><!--/.flex-grid-contain-->
+    </div><!--/.grid-->
+  </div><!--/.grid-contain-->
   
   Modified from: https://github.com/Heydon/fukol-grids
   Dependency: /stylesheets/config/mixins.scss #flexbox-mixins
