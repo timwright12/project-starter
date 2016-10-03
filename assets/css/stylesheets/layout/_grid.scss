@@ -10,12 +10,14 @@
   </div><!--/.flex-grid-contain-->
   
   Modified from: https://github.com/Heydon/fukol-grids
+  Dependency: /stylesheets/config/mixins.scss #flexbox-mixins
+  Browser Support: IE 10+
 
 */
 
 .grid {
-  display: flex;
-  flex-flow: row wrap;
+  @include flexbox(flex);
+  @include flex-flow(row wrap);
   margin: -0.5em;
   
   &-contain {
@@ -23,8 +25,8 @@
   }
   
   > * {
-    flex-basis: 10em;
-    flex-grow: 1;
+    @include flex-basis(10em);
+    @include flex-grow(1);
     margin: 0.5em;
     background: red;
     min-height: 100px;
