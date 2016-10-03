@@ -1,3 +1,35 @@
+/* 
+
+  Flexbox Grid:
+
+  <div class="flex-grid-contain">
+    <div class="flex-grid">
+      <div>A column</div> 
+      <div>A column</div> 
+    </div><!--/.flex-grid-->
+  </div><!--/.flex-grid-contain-->
+
+*/
+
+.grid-contain {
+  overflow: hidden;
+}
+
+.grid {
+  display: flex;
+  flex-flow: row wrap;
+  margin: -0.5em;
+  
+  > * {
+    flex-basis: 10em;
+    flex-grow: 1;
+    margin: 0.5em;
+    background: red;
+    min-height: 100px;
+  }
+  
+}
+
 /*
   
   Responsive Grid:
