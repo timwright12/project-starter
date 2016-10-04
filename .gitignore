@@ -5,8 +5,6 @@ assets/js/app.min.js
 
 # Sass
 .sass-cache
-.sass-cache/
-.sass-cache/*
 *.map
 
 # NPM
