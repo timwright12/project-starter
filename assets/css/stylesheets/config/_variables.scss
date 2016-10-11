@@ -3,10 +3,9 @@
 $font-primary: Sans-serif;
 
 // colors
-$color-base: #fff;
-$color-primary: #000;
-
-$color-action: blue;
+$c-white: #fff;
+$c-gray: #999;
+$c-black: #000;
 
 // breakpoints
 $bp-tiny: 25em !default; // 400px
@@ -18,8 +17,9 @@ $bp-large: 62.5em !default; // 1000px
 $ns : '' !default;
 
 /*
- USAGE
- $ns: 'derp-';
- #{$ns}btn {  } // .derp-btn {  }
+
+  USAGE
+  $ns: 'derp-';
+  #{$ns}btn {  } // .derp-btn {  }
 
 */
