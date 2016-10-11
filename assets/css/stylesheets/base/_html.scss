@@ -1,7 +1,7 @@
 /* Helps to create a higher contrast for accessibility  */
 ::selection {
-  color: #fff;
-  background-color: #000;
+  color: $c-white;
+  background-color: $c-black;
 }
 
 body {
