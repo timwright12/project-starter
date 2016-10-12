@@ -7,14 +7,13 @@
 }
 
 @mixin visually-hidden () {
-  border: 0;
-  clip: rect(0 0 0 0);
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
   height: 1px;
-  width: 1px;
-  margin: -1px;
-  padding: 0;
   overflow: hidden;
-  position: absolute !important;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
 }
 
 // Move text off screen
