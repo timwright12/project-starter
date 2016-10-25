@@ -1,4 +1,5 @@
 # Project Files
+assets/css/app.css
 assets/css/app.min.css
 assets/css/fonts.min.css
 assets/js/app.min.js
@@ -30,7 +31,7 @@ Session.vim
 .Trashes
 
 # Windows
-Thumbs.db 
+Thumbs.db
 Desktop.ini
 
 # SVN
