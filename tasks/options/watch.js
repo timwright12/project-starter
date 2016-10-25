@@ -4,7 +4,7 @@ module.exports = {
   },
   scripts: {
     files: ['assets/js/app.js'],
-    tasks: ['eslint', 'jshint', 'concat', 'uglify'],
+    tasks: ['eslint', 'concat', 'uglify'],
     options: {
       spawn: false,
     }
