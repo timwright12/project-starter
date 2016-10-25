@@ -32,6 +32,6 @@ module.exports = function(grunt) {
   require('load-grunt-tasks')(grunt);
 
   // Default Task is basically a rebuild
-  grunt.registerTask('default', ['eslint', 'jshint', 'concat', 'uglify', 'sass', 'cssmin', 'imagemin']);
+  grunt.registerTask('default', ['eslint', 'jshint', 'concat', 'uglify', 'sass', 'postcss', 'cssmin', 'imagemin']);
 
 };

@@ -1,3 +1,11 @@
+body {
+  transition: all linear 2s;
+  -ms-transform: translate(90deg);
+      transform: translate(90deg);
+  border-radius: 40px;
+  box-shadow: none;
+}
+
 /*
 
   USAGE
@@ -417,6 +425,10 @@ textarea {
 }
 
 /* Helps to create a higher contrast for accessibility  */
+::-moz-selection {
+  color: #fff;
+  background-color: #000;
+}
 ::selection {
   color: #fff;
   background-color: #000;
@@ -488,10 +500,8 @@ p, ol, ul, table {
 */
 .grid {
   display: -ms-flexbox;
-  display: -webkit-flex;
   display: flex;
   -ms-flex-flow: row wrap;
-  -webkit-flex-flow: row wrap;
   flex-flow: row wrap;
   margin: -0.5em;
 }
@@ -500,10 +510,8 @@ p, ol, ul, table {
 }
 .grid > * {
   -ms-flex-preferred-size: 10em;
-  -webkit-flex-basis: 10em;
   flex-basis: 10em;
   -ms-flex-positive: 1;
-  -webkit-flex-grow: 1;
   flex-grow: 1;
   margin: 0.5em;
   background: red;

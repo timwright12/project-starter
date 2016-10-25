@@ -2,16 +2,18 @@
   "name": "Project-Starter",
   "version": "0.2.0",
   "devDependencies": {
-    "grunt": "~1.0.0",
+    "autoprefixer": "^6.5.1",
     "glob": "~4.3.1",
-    "grunt-contrib-uglify": "~2.0.0",
+    "grunt": "~1.0.0",
     "grunt-contrib-concat": "~1.0.1",
-    "grunt-contrib-sass": "~1.0.0",
-    "grunt-contrib-imagemin": "~1.0.1",
-    "grunt-contrib-watch": "~1.0.0",
     "grunt-contrib-cssmin": "~1.0.2",
+    "grunt-contrib-imagemin": "~1.0.1",
     "grunt-contrib-jshint": "~1.0.0",
-    "grunt-eslint": "^19.0.0"
+    "grunt-contrib-sass": "~1.0.0",
+    "grunt-contrib-uglify": "~2.0.0",
+    "grunt-contrib-watch": "~1.0.0",
+    "grunt-eslint": "^19.0.0",
+    "grunt-postcss": "^0.8.0"
   },
   "dependencies": {
     "load-grunt-tasks": "~2.0.0"
