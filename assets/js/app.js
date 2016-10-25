@@ -1,23 +1,26 @@
-;(function ( $, w, doc ) {
+( function ( w, doc ) {
 
   // Uncomment this if you're using jQuery
   // if(! 'jQuery' in w){ return; }
 
   // Enable strict mode
-  "use strict";
+  'use strict';
 
   // Local object for method references
   var App = {};
 
   // Namespace
-  App.ns = "Application";
+  App.ns = 'Application';
 
   // Start defining methods here
   App.init = function() {
+
+    console.log( w );
+    console.log( doc );
 
   };
 
   // Start the application
   App.init();
 
-} )( jQuery, this, this.document );
+} )( this, this.document );
