@@ -29,12 +29,12 @@
       var context = this, args = arguments;
       var later = function() {
         timeout = null;
-        if (!immediate) func.apply(context, args);
+        if ( !immediate ) func.apply( context, args );
       };
       var callNow = immediate && !timeout;
-      clearTimeout(timeout);
-      timeout = setTimeout(later, wait);
-      if (callNow) func.apply(context, args);
+      clearTimeout( timeout );
+      timeout = setTimeout( later, wait );
+      if ( callNow ) func.apply( context, args );
     };
 
   };
@@ -67,16 +67,16 @@
         if ( request.readyState === 4 && request.status === 200 ) {
 
             // save the ajax response to a variable
-            if(options.dataType === 'json'){
+            if( options.dataType === 'json' ){
                 httpresponse = JSON.parse(request.responseText);
-            } else if(options.dataType === 'xml'){
+            } else if( options.dataType === 'xml' ){
                 httpresponse = request.responseXML;
             } else {
                 httpresponse = request.responseText;
             }
 
             // make sure the callback is indeed a function before executing it
-            if(typeof callback === 'function'){
+            if( typeof callback === 'function' ){
 
                 callback(httpresponse);
 
@@ -86,8 +86,8 @@
 
     }; // end onreadystatechange
 
-    request.open(options.type, options.url, true);
-    request.send(null);
+    request.open( options.type, options.url, true );
+    request.send( null );
 
   };
 
@@ -96,7 +96,7 @@
   */
 
   Util.isHidden = function ( el ) {
-    return (el.offsetParent === null);
+    return ( el.offsetParent === null );
   };
 
   /*
@@ -104,7 +104,7 @@
   */
 
   Util.hasClass = function ( el, cls ) {
-    return el.className && new RegExp("(\\s|^)" + cls + "(\\s|$)").test( el.className );
+    return el.className && new RegExp( "(\\s|^)" + cls + "(\\s|$)" ).test( el.className );
   };
 
   /*
@@ -124,10 +124,10 @@
   */
 
   Util.removeClass = function ( el, cls ) {
-    if (el.classList) {
-      el.classList.remove(cls);
-    } else if (Util.hasClass(el, cls)) {
-      var reg = new RegExp('(\\s|^)' + cls + '(\\s|$)');
+    if ( el.classList ) {
+      el.classList.remove( cls );
+    } else if ( Util.hasClass( el, cls ) ) {
+      var reg = new RegExp( '(\\s|^)' + cls + '(\\s|$)' );
       el.className = el.className.replace( reg, ' ' );
     }
   };
