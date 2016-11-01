@@ -1,7 +1,7 @@
 ( function ( w, doc ) {
 
   // Uncomment this if you're using jQuery
-  // if(! 'jQuery' in w){ return; }
+  // if( ! 'jQuery' in w ){ return; }
 
   // Enable strict mode
   'use strict';
