@@ -2,15 +2,19 @@
 
 	'use strict';
   
-  // Define global Util object if it doesn't exist
+  /**
+   * Define global Util object if it doesn't exist
+   */
   if ( 'object' !== typeof window.Util ) {
     window.Util = {};
   }
 
-  // Namespace
+  /**
+   * Namspace string
+   */
   Util.ns = "Utility Methods";
 
-  /*
+  /**
     Debounce (https://davidwalsh.name/essential-javascript-functions)
 
     - Usage -
@@ -39,10 +43,9 @@
 
   };
 
-  /*
-    Utility Ajax Call
-  */
-
+  /**
+   * Utility Ajax Call
+   */
   Util.get = function ( options, callback ) {
 
     var defaults = {
@@ -91,26 +94,23 @@
 
   };
 
-  /*
-    Check if an element is hidden (display: none OR visibility: hidden)
-  */
-
+  /**
+   * Check if an element is hidden (display: none OR visibility: hidden)
+   */
   Util.isHidden = function ( el ) {
     return ( el.offsetParent === null );
   };
 
-  /*
-    Cross-browser way to tell if an element has a certain class
+  /**
+   * Cross-browser way to tell if an element has a certain class
   */
-
   Util.hasClass = function ( el, cls ) {
     return el.className && new RegExp( "(\\s|^)" + cls + "(\\s|$)" ).test( el.className );
   };
 
-  /*
-    Cross-browser way to add a class
+  /**
+   * Cross-browser way to add a class
   */
-
   Util.addClass = function ( el, cls ) {
     if ( el.classList ) {
       el.classList.add( cls );
@@ -119,10 +119,9 @@
     }
   };
 
-  /*
-    Cross-browser way to remove a class
-  */
-
+  /**
+   * Cross-browser way to remove a class
+   */
   Util.removeClass = function ( el, cls ) {
     if ( el.classList ) {
       el.classList.remove( cls );
@@ -132,4 +131,13 @@
     }
   };
  
+  /**
+	 * Helper method to add multiple attribute to an element at once
+	 */
+	Util.setAttributes( el, attrs ) {
+		for( var key in attrs ) {
+			el.setAttribute( key, attrs[key] );
+		}
+	};
+  
 } )();
