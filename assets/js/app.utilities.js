@@ -133,6 +133,11 @@
  
   /**
 	 * Helper method to add multiple attribute to an element at once
+   * @example 
+   *  Util.setAttributes( el, {
+   *    'class' : 'class-name',
+   *    'id' : 'id-name'
+	 *  });
 	 */
 	Util.setAttributes( el, attrs ) {
 		for( var key in attrs ) {
