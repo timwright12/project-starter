@@ -139,7 +139,7 @@
    *    'id' : 'id-name'
 	 *  });
 	 */
-	Util.setAttributes( el, attrs ) {
+	Util.setAttributes = function ( el, attrs ) {
 		for( var key in attrs ) {
 			el.setAttribute( key, attrs[key] );
 		}
