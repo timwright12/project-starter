@@ -33,15 +33,19 @@
       var context = this, args = arguments;
       var later = function() {
         timeout = null;
-        if ( !immediate ) func.apply( context, args );
+        if ( !immediate ) {
+          func.apply( context, args );
+        }
       };
       var callNow = immediate && !timeout;
       clearTimeout( timeout );
       timeout = setTimeout( later, wait );
-      if ( callNow ) func.apply( context, args );
+      if ( callNow ) {
+        func.apply( context, args );
+      }
     };
 
-  };
+  }; // Util.debounce();
 
   /**
    * Utility Ajax Call
@@ -92,21 +96,21 @@
     request.open( options.type, options.url, true );
     request.send( null );
 
-  };
+  }; // Util.get();
 
   /**
    * Check if an element is hidden (display: none OR visibility: hidden)
    */
   Util.isHidden = function ( el ) {
     return ( el.offsetParent === null );
-  };
+  }; // Util.isHidden();
 
   /**
    * Cross-browser way to tell if an element has a certain class
   */
   Util.hasClass = function ( el, cls ) {
     return el.className && new RegExp( "(\\s|^)" + cls + "(\\s|$)" ).test( el.className );
-  };
+  }; // Util.hasClass();
 
   /**
    * Cross-browser way to add a class
@@ -117,7 +121,7 @@
     } else if (!Util.hasClass( el, cls )) {
       el.className += " " + cls;
     }
-  };
+  }; // Util.addClass();
 
   /**
    * Cross-browser way to remove a class
@@ -129,7 +133,7 @@
       var reg = new RegExp( '(\\s|^)' + cls + '(\\s|$)' );
       el.className = el.className.replace( reg, ' ' );
     }
-  };
+  }; // Util.removeClass();
  
   /**
 	 * Helper method to add multiple attribute to an element at once
@@ -143,6 +147,6 @@
 		for( var key in attrs ) {
 			el.setAttribute( key, attrs[key] );
 		}
-	};
+	}; // Util.setAttributes();
   
 } )();
