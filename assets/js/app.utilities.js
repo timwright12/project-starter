@@ -148,5 +148,37 @@
 			el.setAttribute( key, attrs[key] );
 		}
 	}; // Util.setAttributes();
+
+  /**
+	 * Helper method to set an innerWrapping element and bind an event to it
+	 */
+  Util.wrapInner = function( obj, callback ) {
+  
+    if ( !obj.el || !obj.wrap ) {
+      return;
+    }
+
+    var el = obj.el;
+    var content = el.innerHTML;
+    var wrapEl = document.createElement( obj.wrap );
+
+    if ( obj.class ) {
+      wrapEl.setAttribute( 'class', obj.class );
+    }
+    wrapEl.innerHTML = content;
+
+    // Add the button to the DOM
+    el.innerHTML = '';
+    el.appendChild( wrapEl );
+
+    if ( obj.handler ) {
+      wrapEl.addEventListener( obj.handler[0], obj.handler[1] );
+    }
+
+    if ( typeof callback === 'function' ) {
+      callback.call( this );
+    }
+
+  };
   
 } )();
