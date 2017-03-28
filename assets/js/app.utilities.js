@@ -151,6 +151,7 @@
 
   /**
 	 * Helper method to set an innerWrapping element and bind an event to it
+   * PEN: http://codepen.io/timwright12/pen/GWYJdZ
 	 */
   Util.wrapInner = function( obj, callback ) {
   
@@ -179,6 +180,6 @@
       callback.call( this );
     }
 
-  };
+  }; // Util.wrapInner()
   
 } )();
