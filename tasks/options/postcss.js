@@ -1,11 +1,16 @@
 module.exports = {
   options: {
-    map: true, // inline sourcemaps
+
+    map: {
+      inline: false,
+      annotation: 'assets/css/'
+    },
 
     processors: [
       require('autoprefixer')({
-        browsers: 'last 3 versions'
-      })
+          browsers: 'last 2 versions'
+       }),
+      require('cssnano')()
     ]
   },
   dist: {

@@ -11,7 +11,7 @@ module.exports = {
   },
   css: {
     files: ['assets/css/stylesheets/*/*', 'assets/css/stylesheets/*.scss'],
-    tasks: ['sass', 'postcss', 'cssmin'],
+    tasks: ['sass', 'postcss'],
     options: {
       spawn: false,
     }

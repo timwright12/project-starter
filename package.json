@@ -2,11 +2,11 @@
   "name": "Project-Starter",
   "version": "0.2.0",
   "devDependencies": {
-    "autoprefixer": "^6.5.1",
+    "autoprefixer": "^6.7.7",
+    "cssnano": "^3.10.0",
     "glob": "~4.3.1",
     "grunt": "~1.0.0",
     "grunt-contrib-concat": "~1.0.1",
-    "grunt-contrib-cssmin": "~1.0.2",
     "grunt-contrib-imagemin": "~1.0.1",
     "grunt-contrib-sass": "~1.0.0",
     "grunt-contrib-uglify": "~2.0.0",

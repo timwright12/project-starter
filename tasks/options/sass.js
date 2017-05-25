@@ -1,7 +1,7 @@
 module.exports = {
   dist: {
     options: {
-      // cssmin will minify later
+      // postcss - cssnano will minify later
       style: 'expanded'
     },
     files: {
