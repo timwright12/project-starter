@@ -7,10 +7,9 @@ module.exports = {
     },
 
     processors: [
-      require('autoprefixer')({
-          browsers: 'last 2 versions'
-       }),
-      require('cssnano')()
+      require("postcss-cssnext")(),
+      require('cssnano')({ autoprefixer: false }),
+      require("postcss-custom-media")()
     ]
   },
   dist: {
